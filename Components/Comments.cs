@@ -7,7 +7,7 @@ namespace BulkyBook.Components
         public IViewComponentResult Invoke(int id)
         { 
             List<string>  comments = new List<string>() { "Good", "Great", "Keep it up"};
-            return View(comments);  
+            return View("~/Views/components/_comments.cshtml", comments);  
         }
     }
 }
